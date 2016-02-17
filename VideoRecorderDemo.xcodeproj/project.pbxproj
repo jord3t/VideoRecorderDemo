@@ -14,6 +14,7 @@
 		FAF18BE61C7378CC0025A9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF18BE41C7378CC0025A9C4 /* LaunchScreen.storyboard */; };
 		FAF18BF11C7378CC0025A9C4 /* VideoRecorderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF18BF01C7378CC0025A9C4 /* VideoRecorderDemoTests.swift */; };
 		FAF18BFC1C7378CC0025A9C4 /* VideoRecorderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF18BFB1C7378CC0025A9C4 /* VideoRecorderDemoUITests.swift */; };
+		FAF18C0A1C73AAB00025A9C4 /* recordFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF18C091C73AAB00025A9C4 /* recordFullScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FAF18BF71C7378CC0025A9C4 /* VideoRecorderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecorderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF18BFB1C7378CC0025A9C4 /* VideoRecorderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderDemoUITests.swift; sourceTree = "<group>"; };
 		FAF18BFD1C7378CC0025A9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF18C091C73AAB00025A9C4 /* recordFullScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordFullScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FAF18BDB1C7378CC0025A9C4 /* AppDelegate.swift */,
 				FAF18BDD1C7378CC0025A9C4 /* ViewController.swift */,
 				FAF18BDF1C7378CC0025A9C4 /* Main.storyboard */,
+				FAF18C091C73AAB00025A9C4 /* recordFullScreenViewController.swift */,
 				FAF18BE21C7378CC0025A9C4 /* Assets.xcassets */,
 				FAF18BE41C7378CC0025A9C4 /* LaunchScreen.storyboard */,
 				FAF18BE71C7378CC0025A9C4 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					FAF18BD71C7378CC0025A9C4 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 55RK22GM8L;
 					};
 					FAF18BEB1C7378CC0025A9C4 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF18C0A1C73AAB00025A9C4 /* recordFullScreenViewController.swift in Sources */,
 				FAF18BDE1C7378CC0025A9C4 /* ViewController.swift in Sources */,
 				FAF18BDC1C7378CC0025A9C4 /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoRecorderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trevor.jordet.VideoRecorderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoRecorderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trevor.jordet.VideoRecorderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
